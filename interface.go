@@ -23,9 +23,9 @@
 // Package graph holds common algorithms to run on graphs.
 package graph
 
-// An Interface is the interface implemented by graphs to
+// An Graph is the interface implemented by graphs to
 // run algorithms on.
-type Interface interface {
+type Graph interface {
 	Vertices() []Vertex
 	Neighbors(v Vertex) []Vertex
 	Weight(u, v Vertex) int

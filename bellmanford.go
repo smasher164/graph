@@ -44,7 +44,7 @@ func (bf bellmanford) NegativeCycle() bool { return bf.neg }
 
 // SingleNegative finds the shortest path from source to
 // every vertex in a graph that has negative edge weights.
-func SingleNegative(g Interface, source Vertex) ShortestPath {
+func SingleNegative(g Graph, source Vertex) ShortestPath {
     bf := bellmanford{
         dist: make(map[Vertex]int),
         prev: make(map[Vertex]Vertex),

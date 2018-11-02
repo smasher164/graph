@@ -47,7 +47,7 @@ func (fw floydwarshall) NegativeCycle() bool { return fw.neg }
 
 // AllPairs finds the shortest paths between all vertex pairs
 // in a graph that has negative edge weights.
-func AllPairs(g Interface) ShortestPath {
+func AllPairs(g Graph) ShortestPath {
     vert := g.Vertices()
     fw := floydwarshall{
         dist: make(map[Vertex]map[Vertex]int),

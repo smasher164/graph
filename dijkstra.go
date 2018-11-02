@@ -79,7 +79,7 @@ func (dj *dijkstra) addWithPriority(item Vertex, priority int) {
 
 // Single finds the shortest path from source to every
 // vertex in a graph.
-func Single(g Interface, source Vertex) ShortestPath {
+func Single(g Graph, source Vertex) ShortestPath {
 	q := &dijkstra{
 		dist:  make(map[Vertex]int),
 		prev:  make(map[Vertex]Vertex),
